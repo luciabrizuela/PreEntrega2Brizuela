@@ -1,0 +1,230 @@
+/* styles.css */
+
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  header {
+    background-color: #292c47;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+      
+  .logoglm {
+    display: flex; 
+    object-fit: cover;
+     width: 100px;
+      height: 100px;
+    border-radius: 100%; 
+    display: flex;
+    padding: 40px;
+    position:absolute;
+    justify-content: space-between;
+    }
+
+  .title  { 
+    align-items: center;
+    color: #a0a0d9;
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 43%;
+
+  }
+  h1 {margin: 0;
+    text-align: center;
+  }
+  nav ul { 
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    display:flex;
+    margin-left: 10px;
+    padding: 30px;
+  }
+  
+  nav ul li a {
+    position: relative;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    margin:20px;
+    border-radius:50px;
+    background-color: #000001;
+    padding: 30px }
+  
+  main {
+    padding: 20px;
+  }
+
+  .principales {
+    text-align: center;
+    padding: 50px;
+    width: 75px;
+    background-color: #14142c;
+    color: #a0a0d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-left: 45%;
+  border-radius: 60px;}
+
+  /* copy paste {} */
+
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .foto {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .foto img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+    width: 70%;
+    height: 70%;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .foto {
+      padding: 10px;
+    }
+  }
+  
+  
+  /* .ysl {
+    grid-area: area1;
+    position: relative;
+  }
+
+  .xs{
+    grid-area: area2;
+    position: relative;
+  }
+
+  .versage {
+    grid-area: area3;
+    position: relative;
+  }
+
+  .dior {
+    grid-area: area4;
+    position: relative;
+  }
+
+  .chanel {
+    grid-area: area5;
+    position: relative;
+  }
+
+  .aqua {
+    grid-area: area6;
+    position: relative;
+  }
+
+  */
+
+  .nosotros  {
+    padding: 20px;
+    width: 100%;
+    background-color: #14142c;
+    color: #a0a0d9;
+    display: flex;
+    height: 200px; }
+
+    h5  {
+      padding: 20px;
+      width: 60px;
+      background-color: #14142c;
+      color: #a0a0d9;
+      display: flex;
+      height: 20px; }
+  
+
+
+
+
+  h1, h2 {
+    margin-top: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos específicos */
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .subs {
+    margin-left: 0;}
+  
+
+  .catalogo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .perfume {
+    margin: 10px;
+  }
+  
+  .perfume img {
+    width: 300px;
+    height: auto;
+  }
+  @media (max-width: 767px) {
+    .perfume {
+      flex-basis: 100%; /* Hace que las imágenes ocupen todo el ancho disponible */
+    }
+  }
